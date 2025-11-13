@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1D1D1C;
+    color: whitesmoke;
+    font-family: "Inter";
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.header-navbar a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.header-navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FF8FCD;
+    transition: width 0.3s ease;
+}
+
+.header-navbar a:hover {
+    color: #FF8FCD;
+}
+
+.header-navbar a:hover::after {
+    width: 100%;
+}
+
+/* HOME */
+.home {
+    background-image: url(./images/extras/home-background-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home #content {
+    position: relative;
+    left: 8vw;
+    top: 7vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.home h1 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 8rem;
+    color: #FFC000;
+}
+
+.home #botoes {
+    display: flex;
+    gap: 1vw;
+}
+
+.home #botoes button {
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FF8FCD70;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Inter", sans-serif;
+}
+
+.home #botoes button:hover {
+    background-color: #FF8FCD;
+    transform: scale(1.1);
+}
+
+/* SÉRIES E FILMES */
+.cartazes,
+#filmes {
+    padding: 2vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #FF8FCD #1D1D1C;
+}
+
+.cartazes::-webkit-scrollbar,
+#filmes::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cartazes::-webkit-scrollbar-thumb,
+#filmes::-webkit-scrollbar-thumb {
+    background-color: #FF8FCD;
+    border-radius: 10px;
+}
+
+#series-article,
+#filmes-article {
+    display: inline-flex;
+    gap: 2vw;
+    padding: 1vw;
+}
+
+#series-article div,
+#filmes-article div {
+    flex: 0 0 auto;
+}
+
+#series-article img,
+#filmes-article img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#series-article img:hover,
+#filmes-article img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: #FF8FCD;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+}
+
+.nos img{
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.nos:hover img {
+    transform: scale(1.05);
+}

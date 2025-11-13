@@ -1,0 +1,113 @@
+:root {
+    /* cores */
+      --color-pink-primary: #FF8FCD;
+      --color-black-primary: #1E1E1E;
+      --color-white-primary: #FEFEFE;
+      
+      /* cores - segundárias */
+      --color-pink-secundary: #FF1A99;
+  
+      /* fontes - familias */
+      --title-font: "Anton";
+      --subtitle-font: "Poppins";
+      --paragraph-font: "Poppins"
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-black-primary);
+}
+
+/* HEADER -------------------------------------------------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white-primary);
+}
+
+header h1{
+    font-family: var(--title-font);
+    color: var(--color-pink-primary);
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-whitw-primary);
+}
+
+/* TITULO ------------------------------------------------------------------ */
+#titulo{
+    text-align: center;
+}
+
+#titulo h1{
+    color: var(--color-pink-primary);
+}
+
+#titulo h3{
+    color: var(--color-white-primary);
+}
+
+/* MAIN --------------------------------------------------------------------- */
+main{
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    width: 100vw;
+    margin: 10px auto;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 40px;
+}
+main img{
+    height: 65vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--color-pink-primary);
+}
+main p {
+    width: 40vw;
+    font-size: 14px;
+}
+
+#informacoes p{
+   color: var(--color-pink-primary); 
+   font-weight: 500;
+   margin-bottom: 4px;
+}
+
+#nota{
+    color: var(--color-pink-secundary);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#divona{
+    max-width: 500px;
+    font-family: var(--paragraph-font);
+    color: var(--color-white-primary);
+}
+
+/* FOOTER -------------------------------------------------------------- */
+footer{
+    background-color: var(--color-pink-primary);
+    padding: 20px;
+    text-align: center;
+    color: var(--color-white-primary);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
